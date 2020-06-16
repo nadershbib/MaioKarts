@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+.sky{
+    background-color: #0ef1e7;
+    width: 100%;
+    height: 269px;
+    position: relative;
+}
+.clouds{
+    position: absolute;
+    width: 466px;
+    height: 275px;
+    top:10px;
+    left:10px;
+    animation-name: cloud;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index:2;
+
+}
+.clouds2{
+
+
+    position: absolute;
+    width: 466px;
+    height: 275px;
+    top:10px;
+    left:10px;
+    animation-name: cloud;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    opacity: 0.8;
+    z-index:1;
+    animation-fill-mode: backwards;
+
+
+
+
+
+
+
+
+}
+@keyframes cloud{
+     from{
+         transform: translateX(-500px);
+     }
+     to{
+         transform: translateX(1700px);
+     }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.grass{
+    background-color: rgb(76, 220, 107);
+    width: 100%;
+    height:250px;
+    position: relative;
+}
+.people1{
+    position: absolute;
+    top: 181px;
+    width: 409px;
+    height: 70px;
+    left: 70px;
+    z-index: 2;
+}
+.people2{
+    position: absolute;
+    top: 181px;
+    width: 409px;
+    height: 70px;
+    right: 82px;
+    z-index: 2;
+}
+.plants{
+    position: absolute;
+    top: 135px;
+    width: 409px;
+    height: 70px;
+    left: 70px;
+    z-index: 1;
+}
+.plants2{
+    position: absolute;
+    top: 135px;
+    width: 409px;
+    height: 70px;
+    right: 70px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.logo{
+    /* margin: 50px; */
+    width: 200px;
+    height:200px;
+    transform: translate(677px,29px) scaleX(2.5);
+    /* position: absolute; */
+    
+}
+.field{
+     background-color: darkgray;
+     width: 100%;
+     height: 203px;
+     /* border-width: 4px; */
+     border-bottom: 2px solid #6a7279;
+    /* border-color: #6a7279; */
+    /* border-style: solid; */
+    border-top: 6px solid #6a7279;
+    position: absolute;
+}
+.dashed{
+          position:absolute;
+          width: inherit;
+          height: 110px;
+          background-color: inherit;
+          border-bottom-width: 8px;
+          border-bottom-color: antiquewhite;
+          border-bottom-style: dashed;
+
+}
+
+.mario{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    /* top: 10px; */
+    bottom:110px;
+/* animation time             */
+
+animation-name: drive;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animation-fill-mode:both; */
+animation-delay: 2s;
+/* animation-direction: alternate-reverse; */
+}
+@keyframes drive{
+       from{transform:translateX(-100px)}
+       to { transform:translateX(1700px)}
+}
+
+.yoshi{
+
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    /* top: 10px; */
+    bottom:6px;
+    /* margin-left: 100px; */
+/* animation time             */
+
+animation-name: drive;
+animation-duration: 3.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animation-fill-mode: both; */
+animation-delay: 2s;
+/* animation-delay: 90s; */
+
+}
+.Bowser{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    /* top: 10px; */
+    bottom:6px;
+    animation-name: drive;
+animation-duration: 3.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+animation-delay: 3s;
+
+}
+.Luigi{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    /* top: 10px; */
+    bottom:110px;
+/* animation time             */
+
+animation-name: drive;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-fill-mode:backwards;
+animation-delay: 3s;
+/* animation-direction: alternate-reverse; */
+}
+
+.peach{
+
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    /* top: 10px; */
+    bottom:110px;
+/* animation time             */
+
+animation-name: drive;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-fill-mode:backwards;
+animation-delay: 4s;
+/* animation-direction: alternate-reverse; */
+
+
+
+
+}
+.tod{
+
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    /* top: 10px; */
+    bottom:6px;
+    animation-name: drive;
+animation-duration: 3.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+animation-delay: 4s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+    height: fit-content;
+}
